@@ -15,7 +15,6 @@ RUN mkdir -p vault/data
 RUN chmod -R 777 vault/data
 
 USER vault
-
 ADD config.hcl /vault/config/config.hcl
 ADD start-vault.sh /vault/start-vault.sh
 
