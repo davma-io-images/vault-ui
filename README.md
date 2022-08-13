@@ -10,7 +10,13 @@
 
 1. [Docker](https://docs.docker.com/get-docker/)
 
-## 2. Docker pull
+## 2. Docker run
+
+Can quickly run the image to perform your tests with the following code
+
+````
+docker run -p 8200:8200 -p 8201:8201 davma/vault-ui
+````
 
 You can download the full image from [Docker Hub](https://hub.docker.com/) with the following command.
 
