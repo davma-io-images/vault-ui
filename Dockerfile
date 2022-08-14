@@ -11,13 +11,6 @@ RUN echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] http
 
 RUN apt update && apt install vault -y
 
-RUN mkdir -p vaultstart
-RUN mkdir -p vault
-RUN chmod -R 777 vault
-RUN chmod -R 777 vaultstart
-
-USER vault
-
 ADD config.hcl /vaultstart/config.hcl
 ADD start-vault.sh /vaultstart/start-vault.sh
 
