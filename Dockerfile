@@ -12,8 +12,8 @@ RUN echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] http
 RUN apt update && apt install vault -y
 
 RUN mkdir -p vaultstart
-RUN mkdir -p vault/data
-RUN chmod -R 777 vault/data
+RUN mkdir -p vault
+RUN chmod -R 777 vault
 RUN chmod -R 777 vaultstart
 
 USER vault
