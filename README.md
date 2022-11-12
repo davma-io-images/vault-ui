@@ -29,7 +29,7 @@ docker pull davma/vault-ui:latest
 Visiting ``http://localhost:8200/ui`` in a browser loads the Vault UI, where:
 
 - Select the number of keys needed to unlock the vault
-- Have to download the json file with the keys
+- Download the json file with the keys
 
 Now you can access to unlock the vault
 
